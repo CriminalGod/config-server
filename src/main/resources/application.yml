@@ -1,13 +1,20 @@
 server:
   port: 8071
 
+# Spring configuration
 spring:
   application:
     name: config-server
   profiles:
     active: native
+  # Cloud configuration
   cloud:
+    # Config server configuration
     config:
+      # Server configuration
       server:
+        # Native configuration (using local file system)
         native:
+          # Search locations for configuration files
+          # {application} will be replaced with the application name
           search-locations: 'classpath:/config/{application}'
