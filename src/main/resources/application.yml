@@ -17,4 +17,5 @@ spring:
         native:
           # Search locations for configuration files
           # {application} will be replaced with the application name
-          search-locations: 'classpath:/config/{application}'
+#          search-locations: 'classpath:/config/{application}'
+          search-locations: 'file:///F:/config-server/src/main/resources/config/{application}'
